@@ -22,23 +22,15 @@ Instantiation
 Core Uses
 ==========
 
-The core uses are abotu data extraction
+The core uses are about data extraction
 
-
-
-Methods:
-
-    subsetting by bounding box in real coordinates (x,y) or (lon,lat)
-    vertical slices (transects) along arbitrary (x,y) paths, and also (x,y,t) paths
-    trajectories along arbitrary (x,y), (x,y,z) and (x,y,z,t) paths
-    horizontal transects at specific z level, depth below surface, and height above bottom
-    isosurfaces
-    total amount over specified region
-    vorticity
-    velocity vectors rotated to north/east and averaged or interolated to user-specified locations (e.g. node, face, edge)
-    extract timeseries profile using different interpolations schemes (nearest, linear) to a specified lon,lat location
-    extract timeseries using different interpolations schemes (nearest, linear in x,y space, spline in depth) to specified (lon,lat,z location)
-
+* subsetting by bounding box in real coordinates (x,y) or (lon,lat)
+* vertical slices (transects) along arbitrary (x,y) paths, and also (x,y,t) paths
+* trajectories along arbitrary (x,y), (x,y,z) and (x,y,z,t) paths
+* horizontal transects at specific z level, depth below surface, and height above bottom
+* velocity vectors rotated to north/east and averaged or interolated to user-specified locations (e.g. node, face, edge)
+* extract timeseries profile using different interpolations schemes (nearest, linear) to a specified lon,lat location
+* extract timeseries using different interpolations schemes (nearest, linear in x,y space, spline in depth) to specified (lon,lat,z location)
 
 
 Higher Level Analysis
@@ -46,3 +38,6 @@ Higher Level Analysis
 
 This is analysis stuff -- beyond jsut accessing the data.
 
+* isosurfaces
+* total amount over specified region
+* vorticity
