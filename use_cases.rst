@@ -1,6 +1,6 @@
-***************
-APIRS Use Cases
-***************
+****************
+APIRUS Use Cases
+****************
 
 This document will serve to capture the use cases we want the API to cover.
 
@@ -16,7 +16,7 @@ Instantiation
 * Be able to create these objects from local netcdf files or remote
   opendap datasets (and eventually other services like CDMremote).
 
-* Ablity to create these objects directly from code -- i.e. not dependent on a netccf file existing. This opens the door to other arbitrary file format.
+* Ability to create these objects directly from code -- i.e. not dependent on a netcdf file existing. This opens the door to other arbitrary file format.
 
 * check for compliance with SGRID or UGRID and if valid, return the appropriate object.
 
@@ -38,7 +38,7 @@ The core uses are about data extraction
 
 * Horizontal transects at specific z level, depth below surface, and height above bottom
 
-* velocity vectors rotated to north/east and averaged or interolated to user-specified locations (e.g. node, face, edge)
+* velocity vectors rotated to north/east and averaged or interpolated to user-specified locations (e.g. node, face, edge)
 
 * extract timeseries profile using different interpolations schemes (nearest, linear) to a specified lon,lat location
 
@@ -48,7 +48,7 @@ The core uses are about data extraction
 Higher Level Analysis
 =====================
 
-This is analysis stuff -- beyond jsut accessing the data.
+This is analysis stuff -- beyond just accessing the data.
 
 * isosurfaces
 * total amount over specified region
