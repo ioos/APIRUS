@@ -29,8 +29,12 @@ Core Uses
 
 The core uses are about data extraction
 
-* Subsetting by bounding box in real coordinates (x,y) or (lon,lat)
-  - note here: what would this produce? a new *grid object? and would it be lazy-tied to the old netcdf file, or other data source?
+* Subsetting by bounding box in real coordinates (x, y) or (lon, lat)
+  - This would produce a new *grid object, fully compliant, that contained all the cells that intersect with the specified bounds.
+  - The user can specify a lat-lon-aligned bounding rectangle, or an arbitrary polygon in lat-lon coords.
+  - whether it is lazy-tied to the original data source is an implementation detail..
+
+* Convert from curvilinear grid to ugrid: use can convert a curvilear grid to a ugrid, which can then be subset, etc. -- the reverse operation is not possible in the general case.
 
 * Vertical slices (transects) along arbitrary (x,y) paths, and also (x,y,t) paths.
 
