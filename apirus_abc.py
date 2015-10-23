@@ -31,6 +31,26 @@ class APIRUS:
         """
         pass
 
+    @classmethod
+    def load_grid(cls, grid):
+        """
+        load a data set from an arbitrary source
+
+        :param grid: the grid you want to load. This could be:
+                     * A string with a full path to a file, which could be any
+                       supported file type -- probably netcdf
+                     * a netcdf4 Dataset object
+                     * a OpenDAP url
+                     * possibley other supported APIs.
+
+        :returns: returns an appropriate Grid object.
+
+        This method will attempt to identify the type of the input grid, and
+        call the appropriate loading methods.
+        """
+        pass
+
+
     @abstractmethod
     @classmethod
     def from_netcdf(cls, filename):
@@ -48,7 +68,7 @@ class APIRUS:
         :param bounding_box: The bounding box, specified in lon-lat coords:
                              ( (min_lon, min_lat), (max_lon, max_lat))
         :type bounding_box: a 2x2 numpy array of float64, or any sequence that
-                            can be rurned into one.
+                            can be turned into one.
 
         :returns: a new APIRUS object, of the same type as self.
         """
